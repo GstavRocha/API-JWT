@@ -1,1 +1,9 @@
-<p>login works!</p>
+<h1>Login</h1>
+<hr>
+  <form (ngSubmit)="onSubmit()">
+    <p>Login: <input name="user" [(ngModel)]="user" type="text" pInputText /></p>
+    <p> Password:<p-password name="ṕassword" [(ngModel)]="password" [toggleMask]="true"></p-password>
+    </p>
+    <p>
+    PAREI NO BOTÃO
+  </form>

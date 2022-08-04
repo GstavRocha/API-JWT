@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 
 import {AccordionModule} from 'primeng/accordion'
 import {PrimeNGConfig} from 'primeng/api';
+import {InputTextModule} from "primeng/inputtext";
+import {PasswordModule} from "primeng/password";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import {PrimeNGConfig} from 'primeng/api';
   imports: [
     BrowserModule,
     AccordionModule,
+    InputTextModule,
+    PasswordModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
