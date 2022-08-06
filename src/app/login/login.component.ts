@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from "../user";
 
 @Component({
   selector: 'app-login',
@@ -8,10 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
   user= '';
   password = '';
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
+  // onLogin(name: string, password: string):{
+  //   if(this.user == name and this.password == )
+  // }
   onSubmit(): void {
     console.log('Tentou logar');
     console.log('Usuario: '+ this.user);

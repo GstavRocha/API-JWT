@@ -10,6 +10,8 @@ import {PrimeNGConfig} from 'primeng/api';
 import {InputTextModule} from "primeng/inputtext";
 import {PasswordModule} from "primeng/password";
 import {FormsModule} from "@angular/forms";
+import {ButtonModule} from "primeng/button";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import {FormsModule} from "@angular/forms";
     InputTextModule,
     PasswordModule,
     FormsModule,
+    ButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

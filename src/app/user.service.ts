@@ -15,10 +15,11 @@ export class UserService {
       map((retorno: any) => retorno.data)
     );
   }
-  getCliente(id: number): Observable<User>{
+  getClientes(id: number): Observable<User>{
     const url = '/clientes';
     return this.http.get<User>(url).pipe(
       map((retorno: any) => retorno.data)
     )
   }
+  
 }
