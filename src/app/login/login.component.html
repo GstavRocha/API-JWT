@@ -1,11 +1,11 @@
 <h1>Login</h1>
 <hr>
-  <form (ngSubmit)="onSubmit()">
-          <p>Login: <input name="user" [(ngModel)]="user" type="text" pInputText /></p>
-          <p> Password:<p-password name="ṕassword" [(ngModel)]="password" [toggleMask]="true"></p-password>
+  <form [formGroup]="form">
+          <p>Login: <input name="user" formControlName="user" type="text" pInputText /></p>
+          <p> Password:<p-password name="ṕassword" formControlName="password" [toggleMask]="true"></p-password>
           </p>
           <p>
           <p>
-          <button pButton label="Sign in" type="submit">{{onSubmit()}}</button>
+          <button pButton label="Sign in" type="submit" (click)="onClick()">Login</button>
         </p>
   </form>
